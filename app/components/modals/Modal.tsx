@@ -98,7 +98,7 @@ md:h-auto
           {/* CONTENT */}
           <div
             className={`translate
-                duration-300
+              duration-100
                 h-full
                 ${showModal ? "translate-y-0" : "translate-y-full"}
                 ${showModal ? "opacity-100" : "opacity-0"}
@@ -106,8 +106,7 @@ md:h-auto
                 `}
           >
             <div
-              className="
-              translate
+              className="translate
               h-full
               lg:h-auto
               md:h-auto
