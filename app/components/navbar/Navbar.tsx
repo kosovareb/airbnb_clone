@@ -14,8 +14,9 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({
   currentUser
 }) => {
+  console.log(currentUser, 'currentUser')
   return (
-    <div className="fixed w-full bg-white z-10 shadow-sm">
+    <div className="fixed w-full z-10 shadow-sm">
       <div
         className="
         max-w-[2520px]
@@ -37,6 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({
             md:gap-0
             "
           >
+           
             <Logo />
             <Search />
             <UserMenu currentUser={currentUser} />
