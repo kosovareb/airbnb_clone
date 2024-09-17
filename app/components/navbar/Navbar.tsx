@@ -11,10 +11,7 @@ interface NavbarProps {
   currentUser?: SafeUser | null;
 }
 
-const Navbar: React.FC<NavbarProps> = ({
-  currentUser
-}) => {
-  console.log(currentUser, 'currentUser')
+const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
   return (
     <div className="fixed w-full z-10 shadow-sm">
       <div
@@ -38,7 +35,6 @@ const Navbar: React.FC<NavbarProps> = ({
             md:gap-0
             "
           >
-           
             <Logo />
             <Search />
             <UserMenu currentUser={currentUser} />
