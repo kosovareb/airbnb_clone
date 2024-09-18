@@ -11,11 +11,9 @@ interface NavbarProps {
   currentUser?: SafeUser | null;
 }
 
-const Navbar: React.FC<NavbarProps> = ({
-  currentUser
-}) => {
+const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
   return (
-    <div className="fixed w-full bg-white z-10 shadow-sm">
+    <div className="fixed w-full z-10 shadow-sm">
       <div
         className="
         max-w-[2520px]

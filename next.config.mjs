@@ -9,7 +9,7 @@ const nextConfig = {
     NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
   },
   images: {
-    domains: ["avatars.githubusercontent.com", "lh3.googleusercontent.com"],
+    domains: ["avatars.githubusercontent.com", "lh3.googleusercontent.com", "res.cloudinary.com"],
   },
 };
 
