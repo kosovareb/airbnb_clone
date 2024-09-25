@@ -33,6 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
             justify-between
             gap-3
             md:gap-0
+            bg-white
             "
           >
             <Logo />
