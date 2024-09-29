@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 import prisma from "@/app/libs/prismadb";
 import { getCurrentUser } from "@/app/actions/getCurrentUser";
@@ -38,7 +38,7 @@ export async function POST(request: Request) {
       guestCount,
       locationValue: location.value,
       price: parseInt(price),
-      userId: currentUser.id
+      userId: currentUser.id,
     },
   });
 
